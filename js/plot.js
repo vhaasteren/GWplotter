@@ -263,6 +263,14 @@ $( document ).ready(function() {
 			this.loaded = true;
 			this.hcdata = [];
 		}
+
+        if (this.type == 0 && this.hcdatafile) {
+            this.loaded = false;
+            this.hcdata = []; // Will be loaded dynamically
+        } else if (this.type == 0) {
+            this.loaded = true;
+            this.hcdata = []; // No data file provided
+        }
 		
 		this.plotdata = function(display) {
 			//display = typeof display !== 'undefined' ? display : plotDisplay;
@@ -328,8 +336,11 @@ $( document ).ready(function() {
 		this.optionRow = function() {
 			var id = "";
 			switch (this.type) {
-				case 0:
+                case 3:
 					id = "pulsar-timing";
+                    break;
+				case 0:
+                    id = "synthetic-pta";
 					break;
 				case 1:
 					id = "ground-based";

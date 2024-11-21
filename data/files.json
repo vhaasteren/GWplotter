@@ -10,12 +10,12 @@
 ], 
 "labelpos" : [
 [
-		4.50e-11, 
-		1.50e-13
+		1.0e-7, 
+		5.0e-17
 	], 
 [
-		4.50e-11, 
-		3.0e-8
+		1e-7, 
+		5.0e-14
 	], 
 [
 		4.50e-11, 
@@ -219,7 +219,7 @@
 "params" : {"A" : 1.0}},
 "10" : {"name" : "EPTA", 
 "datafile" : "data\/detectors\/EPTA.json", 
-"type" : 0, 
+"type" : 3, 
 "default" : 0, 
 "color" : "rgb(0,0,0)", 
 "plotlabels" : [
@@ -249,8 +249,8 @@
 }},
 "11" : {"name" : "IPTA", 
 "datafile" : "data\/detectors\/IPTA.json", 
-"type" : 0, 
-"default" : 1, 
+"type" : 3, 
+"default" : 0,
 "color" : "rgb(0,0,0)", 
 "plotlabels" : [
 	"IPTA", 
@@ -279,7 +279,7 @@
 }},
 "12" : {"name" : "SKA", 
 "datafile" : "data\/detectors\/SKA.json", 
-"type" : 0, 
+"type" : 3, 
 "default" : 0, 
 "color" : "rgb(0,0,0)", 
 "plotlabels" : [
@@ -763,5 +763,35 @@
 		1.0e0, 
 		9.0e-7 
 	]
-]}
+]},
+"32" : {"name" : "NANOGrav", 
+"datafile" : "data\/detectors\/NANOGrav.json", 
+"type" : 3, 
+"default" : 1, 
+"color" : "rgb(0,0,0)", 
+"plotlabels" : [
+	"NANOGrav", 
+	"NANOGrav", 
+	"NANOGrav"
+], 
+"labelpos" : [
+[
+		4.0e-7, 
+		3.0e-13
+	], 
+[
+		4.0e-7, 
+		3.40e-10
+	], 
+[
+		1.80e-6, 
+		0.05
+	]
+], 
+"params" : {
+	"T" : 4.733640e8, 
+	"deltaT" : 1.20960e6, 
+	"deltatrms" : 1.0e-7, 
+	"Np" : 20.0
+}}
 }
